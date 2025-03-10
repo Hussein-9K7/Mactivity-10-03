@@ -1,0 +1,27 @@
+/* src/components/PropertyList.css */
+.property-list {
+    margin: 20px;
+  }
+  
+  .property-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .property-list li {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .property-list a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .property-list a:hover {
+    color: #007BFF;
+  }
+  
