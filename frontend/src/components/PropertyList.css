@@ -1,20 +1,19 @@
-/* src/components/PropertyList.css */
 .property-list {
     display: flex;
-    justify-content: center; /* هذا يجعل البوكس في المنتصف أفقيًا */
-    align-items: center; /* هذا يجعل البوكس في المنتصف عموديًا */
-    height: 100vh; /* لتغطية كامل ارتفاع الصفحة */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
 }
 
 .property-list ul {
     list-style-type: none;
     padding: 20px;
-    width: 80%; /* البوكس سيأخذ 80% من عرض الشاشة */
-    max-width: 900px; /* حد أقصى للعرض */
+    width: 80%;
+    max-width: 900px;
     background-color: #f4f4f4;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* الظل لإعطاء تأثير */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .property-list li {

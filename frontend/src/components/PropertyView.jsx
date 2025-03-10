@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useParams } from 'react-router-dom';
 
 function PropertyView() {
-  const { id } = useParams(); // الحصول على ID من URL
+  const { id } = useParams(); 
   const [property, setProperty] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);

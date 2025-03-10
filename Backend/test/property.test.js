@@ -1,6 +1,5 @@
-// tests/property.test.js
 const request = require('supertest');
-const app = require('../app'); // استيراد التطبيق من ملف app.js
+const app = require('../app'); 
 
 describe('Property API', () => {
   it('should create a new property', async () => {

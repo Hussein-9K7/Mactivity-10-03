@@ -1,10 +1,9 @@
-// src/components/EditProperty.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate, useParams } from 'react-router-dom';
 
 function EditProperty() {
-  const { id } = useParams(); // الحصول على ID من URL
+  const { id } = useParams(); 
   const navigate = useNavigate();
   const [propertyData, setPropertyData] = useState({
     title: '',
@@ -21,7 +20,6 @@ function EditProperty() {
     yearBuilt: ''
   });
 
-  // جلب بيانات العقار للتعديل
   useEffect(() => {
     axios.get(`http://localhost:4000/api/properties/${id}`)
       .then(response => {
@@ -32,7 +30,7 @@ function EditProperty() {
       });
   }, [id]);
 
-  // تحديث الحقول
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     if (name in propertyData.location) {
@@ -55,7 +53,7 @@ function EditProperty() {
     e.preventDefault();
     axios.put(`http://localhost:4000/api/properties/${id}`, propertyData)
       .then(() => {
-        navigate('/'); // إعادة التوجيه إلى الصفحة الرئيسية بعد التعديل
+        navigate('/');
       })
       .catch(error => {
         console.error("Error updating property:", error);

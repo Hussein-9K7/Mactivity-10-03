@@ -1,4 +1,3 @@
-// routes/propertyRoutes.js
 const express = require('express');
 const Property = require('../models/property');
 
