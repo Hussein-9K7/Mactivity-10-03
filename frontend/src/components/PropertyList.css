@@ -1,27 +1,49 @@
 /* src/components/PropertyList.css */
 .property-list {
-    margin: 20px;
-  }
-  
-  .property-list ul {
+    display: flex;
+    justify-content: center; /* هذا يجعل البوكس في المنتصف أفقيًا */
+    align-items: center; /* هذا يجعل البوكس في المنتصف عموديًا */
+    height: 100vh; /* لتغطية كامل ارتفاع الصفحة */
+    margin: 0;
+}
+
+.property-list ul {
     list-style-type: none;
-    padding: 0;
-  }
-  
-  .property-list li {
-    padding: 10px;
-    margin: 10px 0;
+    padding: 20px;
+    width: 80%; /* البوكس سيأخذ 80% من عرض الشاشة */
+    max-width: 900px; /* حد أقصى للعرض */
     background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* الظل لإعطاء تأثير */
+}
+
+.property-list li {
+    padding: 15px;
+    margin: 15px 0;
+    background-color: #ffffff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .property-list a {
+}
+
+.property-list button {
+    margin: 5px;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.property-list button:hover {
+    background-color: #0056b3;
+}
+
+.property-list a {
     text-decoration: none;
     color: #333;
-  }
-  
-  .property-list a:hover {
+}
+
+.property-list a:hover {
     color: #007BFF;
-  }
-  
+}
